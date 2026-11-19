@@ -29,6 +29,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#education">Education</a></li>
         </ul>
 
     </nav>
@@ -66,6 +67,13 @@
                 <a href="#contact" class="btn secondary">
                     Contact Me
                 </a>
+
+                <a href="{{ url_for('static', filename='files/Vishwa_Resume.pdf') }}"
+                  class="btn btn-resume"
+                  download>
+                     Download Resume
+                </a>
+
 
             </div>
 
@@ -242,11 +250,6 @@
 </section>
 
 
-
-    <!-- Skills Section Placeholder -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-    </section>
 
 
     <!-- Projects Section Placeholder -->
@@ -452,6 +455,50 @@
     </div>
 
     </section>
+
+<!-- Education Section -->
+    <section id="education" class="education-section">
+    <h2 class="section-title">Education & Certifications</h2>
+
+    <div class="education-container">
+
+        <div class="education-card">
+            <div class="education-icon">🎓</div>
+
+            <div class="education-info">
+                <h3>Master's in Information Systems</h3>
+                <p class="education-institution">Central Michigan University</p>
+                <p class="education-year">Graduation Year: 2026</p>
+                <p>
+                    Focused on information systems, databases,
+                    business intelligence, data analytics,
+                    and technology-driven problem-solving.
+                </p>
+            </div>
+        </div>
+
+        <div class="education-card">
+            <div class="education-icon">🏅</div>
+
+            <div class="education-info">
+                <h3>Certifications & Professional Learning</h3>
+                <p class="education-institution">
+                    Continuous Learning 
+                </p>
+                <p>
+                    TITLE    -     ISSUER<br>
+                    Lean Six Sigma - CMU<br>
+                    Python - 100 Days of Code UDEMY<br>
+                    Gen AI Data Analysis - FLM<br>
+                    Full Stack Web Development - INTERNSALA<br>
+            
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
 
 
 

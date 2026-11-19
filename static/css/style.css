@@ -563,3 +563,81 @@ section:not(.hero) h2 {
     }
 
 }
+
+/* Education Section */
+
+.education-section {
+    padding: 80px 8%;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.education-card {
+    display: flex;
+    gap: 20px;
+    background: #111c30;
+    padding: 25px;
+    border: 1px solid #26364f;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.education-icon {
+    font-size: 30px;
+}
+
+.education-info h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.education-institution {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.education-year {
+    color: #94a3b8;
+    margin: 8px 0;
+}
+
+.education-info p {
+    line-height: 1.6;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Resume Download Button */
+
+.btn-resume {
+    display: inline-block;
+    margin-top: 15px;
+    background: transparent;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-resume:hover {
+    background: #38bdf8;
+    color: #0b1120;
+}
